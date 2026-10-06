@@ -124,7 +124,7 @@ langgraph-research-dashboard/
 
 - **Phase 0: Product & Architecture Planning** *(Completed)*: Technical specifications, schemas, ADRs, scaffolding.
 - **Phase 1: LangGraph Foundation** *(Completed)*: Core state machine, Planner, Researcher (mocked), Analyzer, Report node, unit tests.
-- **Phase 2: Real Web Research**: Tavily search provider, URL deduplication, real source extraction.
+- **Phase 2: Real Web Research** *(Completed)*: Tavily search provider, URL deduplication, real source extraction.
 - **Phase 3: Conditional Agent**: Validator node, conditional looping, retry limits, loop circuit breakers.
 - **Phase 4: FastAPI Backend**: REST API endpoints, OpenAPI documentation, asynchronous task workers.
 - **Phase 5: PostgreSQL Persistence**: SQLAlchemy models, Alembic migrations, session/source persistence.
