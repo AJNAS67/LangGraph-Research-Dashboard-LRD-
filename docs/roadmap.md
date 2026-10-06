@@ -8,9 +8,9 @@ The LangGraph Research Dashboard is developed systematically across 12 distinct 
 
 | Phase | Title | Focus Area | Key Deliverable | Status |
 |---|---|---|---|---|
-| **Phase 0** | **Product & Architecture Planning** | System Architecture & Design | Architecture specifications, ER diagrams, ADRs, Roadmap | **Active** |
-| **Phase 1** | **LangGraph Foundation** | Core Linear Graph & State | State schema, Planner, Researcher (mocked), Analyzer, Report node, tests | Pending |
-| **Phase 2** | **Real Web Research** | Search Tool Integration | Tavily search tool, scraper, URL deduplication, real source extraction | Pending |
+| **Phase 0** | **Product & Architecture Planning** | System Architecture & Design | Architecture specifications, ER diagrams, ADRs, Roadmap | **Completed** |
+| **Phase 1** | **LangGraph Foundation** | Core Linear Graph & State | State schema, Planner, Researcher (mocked), Analyzer, Report node, tests | **Completed** |
+| **Phase 2** | **Real Web Research** | Search Tool Integration | Tavily search tool, scraper, URL deduplication, real source extraction | **Pending** |
 | **Phase 3** | **Conditional Agent** | Dynamic Critique & Looping | Validator node, conditional edge, retry limits, anti-infinite-loop gates | Pending |
 | **Phase 4** | **FastAPI Backend** | Application API Layer | REST API endpoints, Pydantic schemas, background worker, unit tests | Pending |
 | **Phase 5** | **PostgreSQL Persistence** | Relational DB & Migrations | SQLAlchemy 2.0 async models, Alembic migrations, session/source persistence | Pending |

@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
       POSTGRES_DB: ${POSTGRES_DB:-lrd_db}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "${POSTGRES_PORT:-5433}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -16,6 +16,17 @@ services:
       timeout: 5s
       retries: 5
     restart: unless-stopped
+
+  research-runner:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: lrd-research-runner
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app/backend
+      - ./scripts:/app/scripts
 
 volumes:
   pgdata:
